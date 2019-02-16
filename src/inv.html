@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Icube - Bootstrap Theming</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap-multiselect.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="./css/inv.css" />
+
+</head>
+
+<body>
+	<div class="container-fluid jumbo-me  ">
+		<div class="jumbotron default-padd">
+			<div class="row">
+				<h3 class="group-title">Item Details</h3>
+				<div class="col-md-8">
+						<hr />
+					<div class="form-group">
+						<div class="row vertical-me">
+							<div class="col-md-2 form-label"> <label>Division</label> </div>
+							<div class="col-md-10">
+								<select class="form-control" id="division-select">
+									<option value="" disabled selected>Division</option>
+								</select>
+							</div>
+						</div>
+						<div class="row vertical-me">
+							<div class="col-md-2 form-label"> <label>Section</label> </div>
+							<div class="col-md-10">
+								<select class="form-control" id="section-select">
+									<option value="" disabled selected>Section</option>
+								</select>
+							</div>
+						</div>
+						<div class="row vertical-me">
+							<div class="col-md-2 form-label"> <label>Department</label> </div>
+							<div class="col-md-6">
+								<input type="text" class="form-control" placeholder="Department" />
+							</div>
+							<div class="col-md-1 form-label"> <label>Alias</label> </div>
+							<div class="col-md-3">
+								<input type="text" class="form-control" placeholder="Alias Name" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<div class="panel with-nav-tabs panel-info">
+						<div class="panel-heading">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#tab1info" data-toggle="tab">Allocation</a></li>
+								<li><a href="#tab2info" data-toggle="tab">Additonal</a></li>
+								<li><a href="#tab3info" data-toggle="tab">Default</a></li>
+							</ul>
+						</div>
+						<div class="panel-body">
+							<div class="tab-content">
+								<div class="tab-pane fade in active" id="tab1info">
+									<div class="form-group">
+										<div class="row vertical-me">
+											<div class="col-md-2">
+												<label class="form-label">POS Images</label>
+											</div>
+											<div class="col-md-1"></div>
+											<div class="col-md-3">
+												<input type="file" class="form-control">
+											</div>
+											<div class="col-md-3">
+												<input type="file" class="form-control">
+											</div>
+											<div class="col-md-3">
+												<input type="file" class="form-control">
+											</div>
+										</div>
+										<div class="row vertical-me">
+											<div class="col-md-2"><label class="form-label">UOM</label></div>
+											<div class="col-md-1"></div>
+											<div class="col-md-3">
+												<div class="row">
+													<div class="col-md-6 col-padd-low">
+														<input type="radio" name="uom-type" class="form-radio" id="uom-type-single">
+														<label for="uom-type-single" class="form-label">Single</label>
+													</div>
+													<div class="col-md-6 col-padd-low">
+														<input type="radio" name="uom-type" class="form-radio" id="uom-type-multiple">
+														<label for="uom-type-multiple" class="form-label">Multiple</label>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<div class="row">
+													<i class="glyphicon glyphicon-plus-sign icon-md form-label col-md-2"></i>
+													<div class="col-md-10">
+														<input type="text" class="form-control" value="1.00">
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<select name="" id="uom-select" class="form-control">
+													<option value="PCS">PCS</option>
+													<option value="MTRS">MTRS</option>
+												</select>
+											</div>
+										</div>
+										<div class="row vertical-me">
+											<div class="col-md-3">
+												<label for="" class="form-label">Required Categories</label>
+											</div>
+											<div class="col-md-9">
+												<select name="" id="" class="form-control">
+													<option value=""></option>
+												</select>
+											</div>
+										</div>
+										<div class="row vertical-me">
+											<div class="col-md-3">
+												<label for="" class="form-label">Mandatory Categories</label>
+											</div>
+											<div class="col-md-9">
+												<select name="" id="" class="form-control">
+													<option value=""></option>
+												</select>
+											</div>
+										</div>
+										<div class="row vertical-me">
+											<div class="col-md-3">
+												<label for="" class="form-label">Tax Name</label>
+											</div>
+											<div class="col-md-9">
+												<select name="" id="" class="form-control">
+													<option value=""></option>
+												</select>
+											</div>
+										</div>
+										<div class="row vertical-me">
+											<div class="col-md-3">
+												<label for="" class="form-label">Aging Name</label>
+											</div>
+											<div class="col-md-9">
+												<select name="" id="" class="form-control">
+													<option value=""></option>
+												</select>
+											</div>
+										</div>
+										<div class="row vertical-me">
+											<div class="col-md-3">
+												<label for="" class="form-label">Margin Rule</label>
+											</div>
+											<div class="col-md-9">
+												<select name="" id="" class="form-control">
+													<option value=""></option>
+												</select>
+											</div>
+										</div>
+										<div class="row vertical-me">
+											<div class="col-md-6">
+												<div class="row">
+													<div class="col-md-6">
+														<label for="" class="form-label">Inventory Type</label>
+													</div>
+													<div class="col-md-6">
+														<select name="" id="" class="form-control">
+															<option value=""></option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="row">
+													<div class="col-md-4 ">
+														<label for="" class="form-label">Inv Valuation</label>
+													</div>
+													<div class="col-md-8">
+														<select name="" id="" class="form-control">
+															<option value=""></option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row vertical-me">
+										<div class="col-md-6">
+											<div class="row">
+												<div class="col-md-6">
+													<label for="" class="form-label">Product Type</label>
+												</div>
+												<div class="col-md-6">
+													<select name="" id="" class="form-control">
+														<option value=""></option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="row">
+												<div class="col-md-4 ">
+													<label for="" class="form-label">Hsn Code</label>
+												</div>
+												<div class="col-md-8">
+													<input type="text" class="form-control">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row vertical-me">
+										<div class="col-md-6">
+											<div class="row">
+												<div class="col-md-6">
+													<label for="" class="form-label">Route ID</label>
+												</div>
+												<div class="col-md-6">
+													<select name="" id="" class="form-control">
+														<option value=""></option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="row">
+												<div class="col-md-4 ">
+													<label for="" class="form-label">Square Feet</label>
+												</div>
+												<div class="col-md-8">
+													<input type="text" class="form-control">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row vertical-me">
+										<div class="col-md-4">
+											<input type="checkbox" name="" id="extinct" class="form-checkbox">
+											<label for="extinct" class="form-label">Extinct</label>
+										</div>
+										<div class="col-md-2">
+											<input type="button" value="Import Excel" class="btn-default form-control">
+										</div>
+										<div class="col-md-2">
+											<input type="button" value="Save" class="btn-primary form-control">
+										</div>
+										<div class="col-md-2">
+											<input type="button" value="Clear" class="btn-default form-control">
+										</div>
+										<div class="col-md-2">
+											<input type="button" value="Exit" class="btn-danger form-control">
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="tab2info">Info 2</div>
+								<div class="tab-pane fade" id="tab3info">Info 3</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<div class="col-md-4">
+
+			</div>
+		</div>
+		</div>
+
+	</div>
+	<script src="../libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../libs/bootstrap/js/bootstrap-multiselect.min.js"></script>
+	<script src="./js/inv.js"></script>
+</body>
+
+</html>

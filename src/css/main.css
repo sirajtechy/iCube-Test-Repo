@@ -1,0 +1,205 @@
+@import "../../libs/Fonts/SourceSansPro/sourcesanspro.css";
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+html{overflow-x: hidden;}
+body{
+	font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+	width: 100%;
+	height: 100vh;
+}
+.hidden-contents{
+	display: none !important;
+}
+.wrapper{
+	width: 100%;
+	height: 100%;
+}
+.content-wrapper{
+	width: 100%;
+	padding-left: 200px;
+	/* background-color: #f6f8f8; */
+}
+.fixed-left{
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+.brand-title{
+	color: #eaebed !important;
+	font-size: 20px;
+	font-weight: 700;
+	margin: 5px 0;
+}
+.font-thin{
+	font-family: inherit;
+	font-weight: 300 !important;
+}
+/*  Dashboard Design   */
+.bg-light{
+	color: #6b7175;
+	background-color: #edf1f2;
+}
+.bg-dark{
+	font-family: inherit;	
+	color: #a6a8b1; 
+	color: #c1c3c9 !important;
+	background-color: #3a3f51;
+}
+.bg-white{
+	color: #6b7175;
+	background-color: #fff;
+}
+.box-shadow{
+	box-shadow: 0 2px 2px rgba(0,0,0,0.05),0 1px 0 rgba(0,0,0,0.05);
+}
+.bg-dark .elem{
+	padding: 10px 30px;
+	font-size: 14px;
+	line-height: 1.4;
+	transition: all .2s;
+	clear: both;
+}
+.bg-dark .elem-active{
+	color: #fff;
+	background-color: #32374a !important;
+}
+.bg-dark .elem:hover{
+	cursor: pointer;
+	color: #fff;
+	background-color: #32374a !important;
+}
+.bg-dark li{
+	clear: both;
+}
+.list-caption{
+	color: #8b8e99 !important;
+	margin: 10px;
+}
+.dark-line{
+	width: 100%;
+	height: 2px;
+	position: relative;
+	margin: 10px 0;
+	clear: both;
+	background-color: #2e3344;
+}
+.padd-default{
+	padding: 20px 10px;
+	text-align: center;
+}
+.breathing-space{
+	margin: 20px 10px;
+}
+.sidebar{
+	width: 200px;
+	height: 100%;
+	z-index: 10;
+}
+.main-content{
+	width: 100%;
+	height: 100%;
+	/* overflow-x: hidden; */
+	/* overflow-y: auto; */
+	position: relative;
+	z-index: 0 !important;
+}
+.content-heading{
+	margin: 20px 0;
+}
+
+/*		tabs design	starts here		*/
+
+.main-content .tab-page-wrapper{
+	position: relative;
+	display: flex;
+}
+.main-content .tab-page-wrapper input{
+	display: none;
+}
+.main-content .tab-page-Tab-header:checked ~ div{
+	opacity: 1 !important;
+	transition-delay: .2s;
+}
+.main-content .tab-page-Tab-header:checked + label{
+	background: skyblue;
+	color: white;
+}
+.main-content .tab-page-wrapper label{
+	position: relative;
+	display: inline-block;
+	padding: 5px;
+	margin: 0 10px;
+	background: rgba(0, 0, 0, 0.2);
+	text-decoration: none;
+	transition: all .2s;
+}
+.main-content .tab-page-wrapper div:first-child::after{
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 10px;
+	width: 250px;
+	height: 80px;
+	background: rgba(0, 0, 0, .1);
+	z-index: -1;
+}
+.main-content .tab-page-wrapper label:hover {
+	background: skyblue;
+	color: white;
+}
+.main-content .tab-page-wrapper > div > div{
+	opacity: 0;
+	position: absolute;
+	left: 10px;
+	padding: 10px;
+	transition: all .2s;
+}
+
+/*		tabs design	ends here	*/
+
+
+/*	 	Login Page design starts here			*/
+
+.padd-me{
+	padding: 30px;
+	margin: 15px;
+ }
+ body{
+	background: rgba(0, 0, 0, 0.03)
+ }
+ .login-container{
+	margin-top: 50px;
+	width: 80%;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .06);
+ }
+ .login-container .Login-caption{
+	color: #7c799f !important;
+	font-size: 3em;
+ }
+ .input-fields-container{
+	margin: 40px 0;
+ }
+ .input-fields-container input , select{
+	width: 100%;
+	height: auto !important; 
+	font-size: 1.5em !important;
+	color: #575575 !important;
+	padding: 7px !important;
+	border: 1px solid #e4e4e4;
+	border-radius: 5px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, .08);
+ }
+ .input-fields-container select{
+	border-radius: 0px !important;
+ }
+ .input-fields-container .action-buttons{
+	width: 70% !important;
+	border: none;
+	transition: all .3s;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, .2) !important;
+	font-size: 1.7em;
+ }
+
+/*		Login Page design ends here		*/

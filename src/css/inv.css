@@ -1,0 +1,45 @@
+*{margin: 0;padding: 0;}
+hr{
+	margin: 10px ;
+	margin-bottom: 15px;
+	height: 1px;
+	background: lightgrey;
+}
+.text-center{
+	text-align: center !important;
+}
+.group-title{
+	margin: 10px 15px !important;
+}
+.padd-me{
+	padding: 30px;
+	margin: 15px;
+}
+.bg-me {
+	background-image: url("../../assets/images/Desert.jpg")
+}
+.vertical-me {
+	margin-bottom: 15px;
+}
+.jumbo-me {
+	margin-top: 25px;
+}
+.default-padd{
+	padding: 10px 20px !important;
+}
+.col-padd-low{
+	padding: 0 10px !important;
+}
+.form-label{
+	line-height: 30px !important;
+}
+.form-checkbox , .form-radio{
+	position: relative;
+	top: 4px;
+}
+.icon-lg{
+	font-size: 30px !important;
+}
+.icon-md{
+	font-size: 20px !important;
+}
