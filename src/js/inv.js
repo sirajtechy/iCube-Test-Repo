@@ -47,4 +47,4 @@ $('#division-select').on('change' , function(){
 	$('#section-select').html("<option value=''></option>"+sectionHTML);
 });
 
-// $('#uom-select').multiselect();
+$('#req-cat').multiselect();

@@ -35,7 +35,7 @@ hr{
 }
 .form-checkbox , .form-radio{
 	position: relative;
-	top: 4px;
+	/* top: 4px; */
 }
 .icon-lg{
 	font-size: 30px !important;
